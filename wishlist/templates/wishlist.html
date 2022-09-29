@@ -1,18 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h5>Nama: </h5>
-<b>{{nama}}</b>
+<h5>Nama: {{nama}}</h5>
 
-<table>
-    <tr>
+<table class="table table-bordered"">
+    <tr class="table-primary">
     <th>Nama Barang</th>
     <th>Harga Barang</th>
     <th>Deskripsi</th>
     </tr>
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for barang in list_barang %}
-    <tr>
+    <tr class="table-info">
         <th>{{barang.nama_barang}}</th>
         <th>{{barang.harga_barang}}</th>
         <th>{{barang.deskripsi}}</th>
