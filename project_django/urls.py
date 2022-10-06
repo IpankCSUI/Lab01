@@ -23,4 +23,5 @@ urlpatterns = [
     path('xml/', include('wishlist.urls')),
     path('json/', include('wishlist.urls')),
     path('json/<int:id>', include('wishlist.urls')),
+    path('ajax/', include('wishlist.urls')),
 ]
